@@ -17,7 +17,7 @@ class PostController < ApplicationController
     
     get '/logout' do 
       #all we do to logout is clear the session 
-      
+      session.clear
     end
   end
   
