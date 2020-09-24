@@ -4,7 +4,7 @@ class ApplicationController < Sinatra::Base
     set :publich_folder, 'public'
     set :views, 'app/views'
     enable :sessions ##do for cookies ##perfer firefox
-    set :session_secret, "carcollection" ##do for cookies perfer firefox
+    set :session_secret, "auth_demo_lv" ##do for cookies perfer firefox
   end 
   
   get '/' do 
