@@ -7,12 +7,14 @@ class PostController < ApplicationController
   end 
   
   get '/post/new' do 
+    #Checking if they are logged in
     #this is what they can't do unless they are logged in
     if session[:email].empty?
-      redirect "/login"
+      redirect "/login" #Redirecting if they are not
     else
-      "A new post form"
+      "A new post form" #Rendering if they are
     end
+  end
   
 end 
     
