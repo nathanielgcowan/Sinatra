@@ -1,4 +1,8 @@
 class PostController < ApplicationController 
   
   get '/posts' do 
-    "You ar elogged in as #{session[:email]"
+    "You are logged in as #{session[:email]}"
+  end 
+  
+end 
+    
