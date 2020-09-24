@@ -23,13 +23,15 @@ class PostController < ApplicationController
   end
   
   get '/post/:id/edit' do 
+    ##Here is another form that needs protection
     #Checking if they are logged in
     #this is what they can't do unless they are logged in
     if !session[:email] #"if not email---redirect"
       redirect "/login" #Redirecting if they are not
     else
-      "A new post form" #Rendering if they are
+      "An edit post form" #Rendering if they are
     end
   end 
+  
 end 
     
