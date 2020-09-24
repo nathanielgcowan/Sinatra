@@ -9,13 +9,13 @@ class ApplicationController < Sinatra::Base
   
   get '/' do 
     session[:greeting]= "Hello World" #works as a hash
-    response.set_cookie 'credit'
+    response.set_cookie 'credit_amount', "100"
     #if they have a different webpage then you it is called session hijacking
     "Hello World!"
   end 
   
   get '/remember' do 
-    session[:greeting]
+    "You have #{resquest.cookies["credit_amou""
   end 
     
 end 
