@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
   end 
   
   get '/remember' do 
-    "You have #{resquest.cookies["credit_amou""
+    "You have #{resquest.cookies["credit_amount"]} left to sample
   end 
     
 end 
