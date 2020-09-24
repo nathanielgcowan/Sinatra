@@ -4,4 +4,7 @@ class SessionsController < ApplicationController
     erb :"sessions/login.html"
   end
   
+  
+  post '/sessions' do
+    
 end 
