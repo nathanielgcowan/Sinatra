@@ -26,7 +26,7 @@ class PostController < ApplicationController
     ##Here is another form that needs protection
     #Checking if they are logged in
     #this is what they can't do unless they are logged in
-    # if !session[:email] #"if not email---redirect"
+    # if !session[:email] #"if not email---redirect" ## (this is not semantic we put this in the ApplicationController)
       redirect "/login" #Redirecting if they are not
     else
       "An edit post form" #Rendering if they are
