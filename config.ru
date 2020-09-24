@@ -7,4 +7,5 @@ require './config/environment'
   end 
 
 use Rack::MethodOverride 
+use Rack::SEssion::Cookie
 run ApplicationController 
