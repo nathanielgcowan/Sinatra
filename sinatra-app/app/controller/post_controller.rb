@@ -14,6 +14,11 @@ class PostController < ApplicationController
     else
       "A new post form" #Rendering if they are
     end
+    
+    get '/logout' do 
+      #all we do to logout is clear the session 
+      
+    end
   end
   
 end 
