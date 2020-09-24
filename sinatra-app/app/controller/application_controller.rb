@@ -25,6 +25,6 @@ class ApplicationController < Sinatra::Base
       ##this !! is a patter in ruby for truthiness
     end 
     
-    ####I am on 33:05 on the video
+    ####I am on 33:05 on the video https://learn.co/tracks/full-stack-web-development-v6/sinatra/activerecord/video-review-authentication
   
 end 
