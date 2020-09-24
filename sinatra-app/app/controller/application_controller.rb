@@ -24,5 +24,7 @@ class ApplicationController < Sinatra::Base
       !!session[:email]
       ##this !! is a patter in ruby for truthiness
     end 
+    
+    ####I am on 
   
 end 
