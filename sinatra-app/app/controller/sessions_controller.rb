@@ -6,5 +6,7 @@ class SessionsController < ApplicationController
   
   
   post '/sessions' do
-    
+    raise params.inspect 
+  end 
+  
 end 
