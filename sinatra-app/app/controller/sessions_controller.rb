@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
   post '/sessions' do
     #this routes is processing their login
     session [:email] = params[:email]
+    redirect '/posts'
   end 
   
 end 
