@@ -8,7 +8,11 @@ class ApplicationController < Sinatra::Base
   end 
   
   get '/' do 
+    session[:greeting]= "Hello World" #works as a hash
     "Hello World!"
   end 
+  
+  get '/remember' do 
+    
   
 end 
