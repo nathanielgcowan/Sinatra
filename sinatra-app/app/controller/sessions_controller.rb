@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
   
   
   post '/sessions' do
+    r
     #this routes is processing their login
     #the goal is to get their data to session
     session [:email] = params[:email]
