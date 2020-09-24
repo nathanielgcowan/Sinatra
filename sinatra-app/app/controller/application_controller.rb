@@ -18,4 +18,11 @@ class ApplicationController < Sinatra::Base
   #   "You have #{resquest.cookies["credit_amount"]} left to sample"
   # end 
   
+  helpers do 
+    
+    def logged_in?
+      !!session[:email]
+      ##this !! is a patter in ruby for truthiness
+    end 
+  
 end 
