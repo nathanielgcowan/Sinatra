@@ -6,7 +6,8 @@ class SessionsController < ApplicationController
   
   
   post '/sessions' do
-    raise params.inspect 
+    #this routes is processing their login
+    session [:email] = params[:email]
   end 
   
 end 
